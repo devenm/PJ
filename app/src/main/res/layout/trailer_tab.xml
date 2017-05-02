@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true"
+    android:scrollbars="none"
+  >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewpagerheight"
+           android:visibility="gone"
+            ><View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88111111"></View>
+            <ImageView
+                android:id="@+id/banercontent"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:background="#876262">
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinner"
+                    android:layout_weight="1"
+                    android:entries="@array/Genre"
+                    android:popupBackground="#876262"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Latest"
+                    android:textColor="#fcf0f0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/latest"
+                    android:layout_weight="1"
+                    android:background="#876262"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Featured"
+                    android:id="@+id/featured"
+                    android:textColor="#fcf0f0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="1"
+                    android:background="#876262"/>
+
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Subscribe"
+                    android:id="@+id/button4"
+                    android:textColor="#fcf0f0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="1"
+                    android:background="#876262"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#99111111"
+                android:id="@+id/v"
+                android:layout_gravity="bottom"></View>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/contentchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Trailers"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/firstcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"/>
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progresv"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More"
+            android:id="@+id/more"
+            android:layout_gravity="right"
+            android:background="#e5624b"
+            android:textColor="#fff"
+            android:layout_marginRight="10dp"
+            android:drawableBottom="@drawable/morebottomline"
+          android:visibility="gone"  />
+
+
+    </FrameLayout>
+
+</ScrollView>

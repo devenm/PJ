@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgriedeant"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context="com.init.nirmolak.activity.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            ><View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88111111"></View>
+            <ImageView
+                android:id="@+id/banercontent"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:background="#876262">
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spinner"
+                    android:layout_weight="1"
+                    android:entries="@array/Genre"
+                    android:popupBackground="#876262"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Latest"
+                    android:textColor="#fcf0f0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/button2"
+                    android:layout_weight="1"
+                    android:background="#ae8080"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Featured"
+                    android:id="@+id/button3"
+                    android:textColor="#fcf0f0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="1"
+                    android:background="#876262"/>
+
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Subscribe"
+                    android:id="@+id/button4"
+                    android:textColor="#fcf0f0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="1"
+                    android:background="#876262"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#99111111"
+                android:id="@+id/v"
+                android:layout_gravity="bottom"></View>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView211"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Videos"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/firstcontent"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:layout_marginRight="7dp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More"
+            android:id="@+id/more"
+            android:layout_gravity="right"
+            android:background="#e5624b"
+            android:textColor="#fff"
+            android:layout_marginRight="10dp"
+            android:drawableBottom="@drawable/morebottomline"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Advertisement "
+            android:textColor="#aca9a9"
+            android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:background="#545353"
+            android:src="@drawable/adver"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+</ScrollView>

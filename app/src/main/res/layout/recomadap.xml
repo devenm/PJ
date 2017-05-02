@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:id="@+id/mframe">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+            <View
+                android:id="@+id/view1"
+                android:layout_width="120dp"
+                android:layout_height="4dp"
+                android:background="#998686"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@+id/view1"
+                android:background="#d9c4c4"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/title"
+                android:layout_below="@+id/view2">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo_fade"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"/>
+
+                <com.init.panj.clases.ProgressBarCircular
+                    android:id="@+id/progress"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:textSize="24sp"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/subtitle"
+                android:background="#4F4351"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:maxLines="1"
+                android:paddingLeft="2dp"
+                android:text="Gaddar the trater "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#d1caca"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view11"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:background="#4F4351"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="#d1caca"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:ellipsize="end"/>
+            <View
+                android:id="@+id/view11"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/cardshadow"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

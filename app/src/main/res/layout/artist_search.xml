@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgriedeant">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/back"
+            android:layout_weight="0.2"
+            android:src="@mipmap/back"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView7"
+            android:layout_weight="0.2"
+            android:src="@mipmap/music_search"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:background="#44111111"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/searchbox"
+            android:layout_weight="2.49"
+            android:gravity="center_vertical"
+            android:hint="Search by Artist"
+            android:textColorHint="#ccc7c7"
+            android:paddingLeft="5dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="#44111111"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView8"
+            android:layout_weight="0.2"
+            android:src="@mipmap/voice_search"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:background="#44111111"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Search Result:-"
+            android:id="@+id/serchres"
+            android:layout_margin="5dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/artiscontent"
+                ></android.support.v7.widget.RecyclerView>
+
+          </LinearLayout>
+</LinearLayout>

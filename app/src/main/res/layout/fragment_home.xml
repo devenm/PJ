@@ -1,0 +1,368 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigationBarColor"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:id="@+id/scrol">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.init.panj.clases.AutoScrollViewPager
+            android:id="@+id/banercontent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewpagerheight" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:padding="@dimen/margin_2dp"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/viewcolor"
+    android:layout_marginTop="@dimen/margin_5dp"
+    android:layout_marginBottom="@dimen/margin_5dp"></View>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#44111111"
+            android:paddingTop="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="60dp"
+                android:src="@mipmap/check"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="50dp"
+                android:drawableTop="@mipmap/check"
+                android:text="Subscribe"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ImageView
+                android:id="@+id/loginimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="60dp"
+                android:src="@mipmap/fb"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="50dp"
+                android:drawableTop="@mipmap/loggedin"
+                android:gravity="bottom"
+                android:text="Login"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:id="@+id/firstitem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Trending"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/textColorPrimary" />
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/first_all"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:text="See All"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#e2823c"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/first_recyler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewcolor"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:id="@+id/seconditem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Trailer"
+                android:textAppearance="?android:textAppearanceMedium"
+
+                android:textColor="@color/textColorPrimary" />
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:id="@+id/second_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:text="See All"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#e2823c"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/second_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewcolor"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:id="@+id/third_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Featured"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/textColorPrimary" />
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:id="@+id/third_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0"
+                android:gravity="right|center"
+                android:text="See All"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#e2823c"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/third_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewcolor"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:id="@+id/fourth_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="New Songs "
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/textColorPrimary" />
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:id="@+id/fourth_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0"
+                android:gravity="right|center"
+                android:text="See All"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#e2823c"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fourth_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewcolor"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"></View>
+        <ImageView
+            android:id="@+id/facebooklogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/facebookbaner"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/facebooklogin1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#203f6e"
+            android:text="Login With Facebook"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:text="Create Playlist, Save and Watch Videos later "
+            android:textColor="#c9c6c6"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:id="@+id/fivthitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Recommended "
+                android:textColor="@color/textColorPrimary"
+               android:textAppearance="?android:textAppearanceMedium" />
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:id="@+id/fivth_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0"
+                android:gravity="right|center"
+                android:text="See All"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#e2823c"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fivth_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"></android.support.v7.widget.RecyclerView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewcolor"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.init.panj.clases.CustomTextViewHelvetica
+                android:id="@+id/live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Live Tv"
+                android:textColor="@color/textColorPrimary"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/live_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"></android.support.v7.widget.RecyclerView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/viewcolor"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"></View>
+    </LinearLayout>
+
+</ScrollView>

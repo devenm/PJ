@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame"
+    android:background="@drawable/shadow">
+<com.init.panj.clases.CustomImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/trailerimage"
+    android:src="@drawable/logo_fade"
+android:adjustViewBounds="true"
+    />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    app:indicatorName="BallScaleRippleMultipleIndicator"
+    app:indicatorColor="#e97736"
+    />
+</FrameLayout>

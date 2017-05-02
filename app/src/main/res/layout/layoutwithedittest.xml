@@ -1,0 +1,21 @@
+<android.support.design.widget.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrapper0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColorHint="#ccb0b0"
+    android:fitsSystemWindows="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:inputType="textEmailAddress|textCapSentences"
+        android:paddingLeft="5dp"
+        android:textColor="#ffffff"
+        android:background="@android:color/transparent"
+        android:layout_gravity="top"
+        android:textStyle="bold"
+
+     />
+</android.support.design.widget.TextInputLayout>
+   <!-- android:capitalize="sentences"-->

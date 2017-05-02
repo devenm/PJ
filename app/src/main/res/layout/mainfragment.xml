@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigationBarColor">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabanim_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:tabMode="scrollable"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#f27c2d"
+            app:tabIndicatorHeight="2dp"
+            app:tabTextColor="#b1b0b0"
+            app:tabSelectedTextColor="#ffffff"
+           app:tabTextAppearance="@style/MineCustomTabText"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/onlyhome">
+        <com.init.panj.clases.CustomViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pager"
+            android:layout_weight="1"></com.init.panj.clases.CustomViewPager>
+        </FrameLayout>
+</LinearLayout>

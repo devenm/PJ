@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+      android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/back"
+            android:layout_weight="0.2"
+            android:src="@mipmap/back"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView7"
+            android:layout_weight="0.2"
+            android:src="@mipmap/music_search"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:background="#44111111"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/searchbox"
+            android:layout_weight="2.49"
+            android:gravity="center_vertical"
+            android:hint="Search Music"
+            android:textColorHint="#ccc7c7"
+            android:paddingLeft="5dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="#44111111"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView8"
+            android:layout_weight="0.2"
+            android:src="@mipmap/voice_search"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:background="#44111111"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:id="@+id/movies">
+
+        <TextView
+            android:id="@+id/trendingnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Movies"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="18sp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/moviescontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:id="@+id/trailer">
+
+        <TextView
+            android:id="@+id/newsong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Trailers"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trailercontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:id="@+id/videosong">
+
+        <TextView
+            android:id="@+id/featured"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Videos"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="18sp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/videocontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

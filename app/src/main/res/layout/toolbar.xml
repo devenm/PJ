@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@drawable/strip"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/MyMaterialTheme"
+    app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/home" />
+        <ImageView android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/toolbaricon"
+       />
+        <ImageView android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:src="@mipmap/music_search"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:id="@+id/search"
+         />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="#44111111">
+
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.2"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/music_search" />
+
+                <EditText
+                    android:id="@+id/searchsong"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Search Music"
+                    android:imeOptions="actionSearch"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#ccc7c7" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.2"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/voice_search" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/panj"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/toolbaricon" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

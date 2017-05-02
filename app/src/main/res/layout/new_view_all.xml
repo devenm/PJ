@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+      android:orientation="horizontal"
+        android:padding="@dimen/margin_5dp"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/back"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:padding="@dimen/margin_5dp"
+            />
+
+        <com.init.panj.clases.CustomTextViewRoboto
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/title"
+            android:layout_weight="2.49"
+            android:gravity="center_vertical"
+            android:textColorHint="#ccc7c7"
+            android:paddingLeft="5dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="#44111111"
+            android:textColor="#fff"
+            android:text="Title"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/recyclerview"></include>
+
+</LinearLayout>
