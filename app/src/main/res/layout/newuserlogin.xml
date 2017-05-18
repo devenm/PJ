@@ -88,7 +88,7 @@
         android:layout_alignParentStart="true"
         android:id="@+id/linearLayout3"
        >
-        <com.init.panj.clases.CustomTextViewRobotoBolod
+        <com.init.panjj.otherclasses.CustomTextViewRobotoBolod
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -101,7 +101,7 @@
             android:layout_margin="@dimen/margin_5dp"
             android:background="#262626"
             />
-        <com.init.panj.clases.CustomTextViewRobotoBolod
+        <com.init.panjj.otherclasses.CustomTextViewRobotoBolod
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
@@ -116,7 +116,7 @@
 
 
     </LinearLayout>
-<com.init.panj.clases.CustomTextViewHelvetica
+<com.init.panjj.otherclasses.CustomTextViewHelvetica
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Forgot Password ?"

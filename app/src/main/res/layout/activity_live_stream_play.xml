@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#111111"
     xmlns:EMVideoView="http://schemas.android.com/apk/res-auto"
-    tools:context="com.init.panj.activity.LiveStreamPlay">
+    tools:context="com.init.panjj.activity.LiveStreamPlay">
     <com.devbrackets.android.exomedia.ui.widget.EMVideoView
         android:id="@+id/video_view"
         android:layout_width="match_parent"

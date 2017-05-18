@@ -118,7 +118,7 @@
             android:orientation="horizontal">
 
 
-            <com.init.panj.clases.CustomTextViewRobotoBolod
+            <com.init.panjj.otherclasses.CustomTextViewRobotoBolod
                 android:id="@+id/submit"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

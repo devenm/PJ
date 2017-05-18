@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent"
+    android:id="@+id/mframe"
+    android:layout_height="@dimen/movies_container_height"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:background="@android:color/transparent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent">
+
+        <com.init.panjj.otherclasses.CustomImageView
+            android:id="@+id/icon"
+            android:layout_above="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:src="@drawable/logo_fade" />
+
+        <com.init.panjj.otherclasses.CustomTextViewRoboto
+            android:background="@color/redshade"
+            android:ellipsize="none"
+            android:id="@+id/title"
+            android:layout_above="@+id/subtitle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:text="Title"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+        <com.init.panjj.otherclasses.CustomTextViewRoboto
+            android:background="@color/redshade"
+            android:ellipsize="none"
+            android:id="@+id/subtitle"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:text=""
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textsize_10sp" />
+    </RelativeLayout>
+
+    <com.init.panjj.otherclasses.ProgressBarCircular
+        android:id="@+id/progress"
+        android:layout_gravity="center"
+        android:layout_height="36dp"
+        android:layout_width="36dp"
+        android:textSize="24sp"
+        android:visibility="gone" />
+</FrameLayout>

@@ -14,5 +14,6 @@
     <color name="white">#fff</color>
     <color name="blackshade">#44a7a3a0</color>
     <color name="textColorhint">#bcbdbd</color>
-
+    <color name="redheader">#ff232323</color>
+    <color name="redshade">#ff28202b</color>
 </resources>

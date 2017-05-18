@@ -23,7 +23,7 @@
             android:padding="@dimen/margin_5dp"
             />
 
-        <com.init.panj.clases.CustomTextViewRoboto
+        <com.init.panjj.otherclasses.CustomTextViewRoboto
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/title"

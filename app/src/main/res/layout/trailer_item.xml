@@ -4,7 +4,7 @@
     android:layout_height="@dimen/moviescontainer_height"
     android:id="@+id/mframe"
     android:background="@drawable/shadow">
-<com.init.panj.clases.CustomImageView
+<com.init.panjj.otherclasses.CustomImageView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/trailerimage"

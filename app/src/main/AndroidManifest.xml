@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.init.panj">
+    package="com.init.panjj">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -18,13 +18,13 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <application
-        android:name=".clases.ImageLoaderInit"
+        android:name="com.init.panjj.otherclasses.BackgroundProcess"
         android:allowBackup="true"
         android:icon="@drawable/panjicon"
         android:label="@string/app_name"
         android:theme="@style/MyMaterialTheme">
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.init.panjj.activity.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|keyboard|screenLayout"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
@@ -33,7 +33,7 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebookid" />
 
-        <provider
+       <!-- <provider
             android:name="com.facebook.FacebookContentProvider"
             android:authorities="com.facebook.app.FacebookContentProvider185247195181210"
             android:exported="true" />
@@ -42,30 +42,30 @@
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
         <activity
-            android:name=".activity.PlayVideo"
+            android:name="com.init.panjj.activity.PlayVideo"
             android:configChanges="keyboardHidden|orientation|screenSize" />
-        <activity android:name=".activity.AndroidSQLiteTutorialActivity" />
+        <activity android:name="com.init.panjj.activity.AndroidSQLiteTutorialActivity" />
         <activity
-            android:name=".activity.UserLogin"
+            android:name="com.init.panjj.activity.UserLogin"
             android:screenOrientation="portrait" />
-        <activity android:name=".activity.Splash" />
+        <activity android:name="com.init.panjj.activity.Splash" />
         <activity
-            android:name=".activity.FullPlayAct"
+            android:name="com.init.panjj.activity.FullPlayAct"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
-            android:name=".activity.UserRegistration"
+            android:name="com.init.panjj.activity.UserRegistration"
             android:theme="@style/MyMaterialTheme1" />
         <activity
-            android:name=".activity.DummyPlay"
+            android:name="com.init.panjj.activity.DummyPlay"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".activity.Playtest"
+            android:name="com.init.panjj.activity.Playtest"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".activity.SplashScreen"
+            android:name="com.init.panjj.activity.SplashScreen"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@style/MyMaterialTheme">
             <intent-filter>
@@ -74,21 +74,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.Check" />
+        <activity android:name="com.init.panjj.activity.Check" />
         <activity
-            android:name=".activity.LiveStreamPlay"
+            android:name="com.init.panjj.activity.LiveStreamPlay"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="landscape" />
-        <activity android:name=".activity.RecieviPlayer" />
+        <activity android:name="com.init.panjj.activity.RecieviPlayer" />
         <activity
-            android:name=".activity.RecieveExo"
+            android:name="com.init.panjj.activity.RecieveExo"
             android:screenOrientation="landscape" />
-        <activity android:name=".activity.Test" />
+        <activity android:name="com.init.panjj.activity.Test" />
         <activity
-            android:name=".activity.SubtitlePlayer"
+            android:name="com.init.panjj.activity.SubtitlePlayer"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
-            android:name=".activity.PanjRecive"
+            android:name="com.init.panjj.activity.PanjRecive"
             android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
@@ -105,15 +105,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".radioplayer.Rplayer"
+            android:name="com.init.panjj.radioplayer.Rplayer"
             android:screenOrientation="portrait" />
 
         <service
-            android:name=".radioplayer.SongService1"
+            android:name="com.init.panjj.radioplayer.SongService1"
             android:enabled="true"
             android:exported="true" />
 
-        <receiver android:name=".radioplayer.NotificationBroadcast">
+        <receiver android:name="com.init.panjj.radioplayer.NotificationBroadcast">
             <intent-filter>
                 <action android:name="com.init.panj.delete" />
                 <action android:name="com.init.panj.pause" />
@@ -124,16 +124,16 @@
                 <action android:name="com.init.panj.start" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".radioplayer.CallRecord">
+        <receiver android:name="com.init.panjj.radioplayer.CallRecord">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name=".activity.Main2Activity"
+            android:name="com.init.panjj.activity.Main2Activity"
             android:theme="@style/MyMaterialTheme1" />
-        <activity android:name=".activity.ForgetPassword"></activity>
+        <activity android:name="com.init.panjj.activity.ForgetPassword"></activity>
     </application>
 
 </manifest>

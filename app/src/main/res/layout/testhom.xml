@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
-        <com.init.panj.clases.AutoScrollViewPager
+        <com.init.panjj.otherclasses.AutoScrollViewPager
             android:id="@+id/banercontent"
             android:layout_width="match_parent"
             android:layout_height="@dimen/viewpagerheight" />
@@ -45,7 +45,7 @@
             android:orientation="horizontal"
             android:visibility="visible">
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/live"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

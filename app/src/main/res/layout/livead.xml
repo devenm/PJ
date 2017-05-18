@@ -27,7 +27,7 @@
                 android:layout_centerVertical="false"
                 android:layout_centerHorizontal="true" />
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

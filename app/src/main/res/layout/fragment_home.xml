@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
-        <com.init.panj.clases.AutoScrollViewPager
+        <com.init.panjj.otherclasses.AutoScrollViewPager
             android:id="@+id/banercontent"
             android:layout_width="match_parent"
             android:layout_height="@dimen/viewpagerheight" />
@@ -90,7 +90,7 @@
             android:layout_marginRight="@dimen/margin_5dp"
             android:orientation="horizontal">
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/firstitem"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@color/textColorPrimary" />
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:id="@+id/first_all"
@@ -129,7 +129,7 @@
             android:layout_marginRight="@dimen/margin_5dp"
             android:orientation="horizontal">
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/seconditem"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
 
                 android:textColor="@color/textColorPrimary" />
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/second_all"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -169,7 +169,7 @@
             android:layout_marginRight="@dimen/margin_5dp"
             android:orientation="horizontal">
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/third_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@color/textColorPrimary" />
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/third_all"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -211,7 +211,7 @@
             android:orientation="horizontal"
             android:visibility="visible">
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/fourth_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -220,7 +220,7 @@
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@color/textColorPrimary" />
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/fourth_all"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -299,7 +299,7 @@
             android:orientation="horizontal"
             android:visibility="visible">
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/fivthitem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -308,7 +308,7 @@
                 android:textColor="@color/textColorPrimary"
                android:textAppearance="?android:textAppearanceMedium" />
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/fivth_all"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -342,7 +342,7 @@
             android:orientation="horizontal"
             android:visibility="visible">
 
-            <com.init.panj.clases.CustomTextViewHelvetica
+            <com.init.panjj.otherclasses.CustomTextViewHelvetica
                 android:id="@+id/live"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

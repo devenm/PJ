@@ -11,7 +11,7 @@
         android:layout_marginRight="@dimen/margin_5dp"
         android:orientation="horizontal">
 
-        <com.init.panj.clases.CustomTextViewHelvetica
+        <com.init.panjj.otherclasses.CustomTextViewHelvetica
             android:id="@+id/cat_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@color/textColorPrimary" />
 
-        <com.init.panj.clases.CustomTextViewHelvetica
+        <com.init.panjj.otherclasses.CustomTextViewHelvetica
             android:id="@+id/see_all"
             android:layout_width="0dp"
             android:layout_height="match_parent"

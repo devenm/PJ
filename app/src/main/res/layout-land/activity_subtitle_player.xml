@@ -6,7 +6,7 @@
     xmlns:EMVideoView="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.init.panj.activity.PlayVideo"
+    tools:context="com.init.panjj.activity.PlayVideo"
     android:background="#111111"
     android:id="@+id/mainlayout">
     <android.support.v7.widget.Toolbar
@@ -17,7 +17,7 @@
         android:background="#11111111"
         android:theme="@style/MyMaterialTheme"
         app:popupTheme="@style/Theme.AppCompat.NoActionBar" />
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frame"
@@ -193,5 +193,5 @@
               android:layout_gravity="center"
               />-->
 
-    </FrameLayout>
+    </RelativeLayout>
 </RelativeLayout>
