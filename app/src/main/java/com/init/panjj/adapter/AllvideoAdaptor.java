@@ -1,6 +1,7 @@
 package com.init.panjj.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -12,9 +13,10 @@ import android.widget.TextView;
 
 import com.init.panjj.R;
 import com.init.panjj.activity.MainActivity;
-import com.init.panjj.otherclasses.ProgressBarCircular;
-import com.init.panjj.fragments.Video_home;
+import com.init.panjj.activity.SubtitlePlayer;
 import com.init.panjj.model.ItemBean;
+import com.init.panjj.otherclasses.ProgressBarCircular;
+import com.init.panjj.radioplayer.Controls;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 
@@ -54,8 +56,14 @@ MainActivity act;
                 it.putExtra("position",position);
                 it.putExtra("id",itemBean.id);
                 act.startActivity(it);*/
-                act.replaceFragment(new Video_home(),urllist.get(position).BT200,itemBean.tredcover,"alv", itemBean.tredname + " " + itemBean.treddesp, itemBean.id, 1);
-
+              //  act.replaceFragment(new Video_home(),urllist.get(position).BT200,itemBean.tredcover,"alv", itemBean.tredname + " " + itemBean.treddesp, itemBean.id, 1);
+                Controls.pauseControl(act);
+                MainActivity.allurl = urllist;
+                Intent it = new Intent(act, SubtitlePlayer.class);
+                it.putExtra("url", urllist.get(position).m3u8);
+                it.putExtra("pos", position);
+                it.putExtra("id",  list.get(position).id);
+                act.startActivity(it);
 
             }
         });

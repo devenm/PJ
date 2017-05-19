@@ -13,10 +13,11 @@ import android.widget.TextView;
 
 import com.init.panjj.R;
 import com.init.panjj.activity.MainActivity;
+import com.init.panjj.activity.SubtitlePlayer;
+import com.init.panjj.model.ItemBean;
 import com.init.panjj.otherclasses.CustomImageView;
 import com.init.panjj.otherclasses.ProgressBarCircular;
-import com.init.panjj.fragments.New_Video_home;
-import com.init.panjj.model.ItemBean;
+import com.init.panjj.radioplayer.Controls;
 
 import java.util.ArrayList;
 
@@ -57,8 +58,15 @@ urllist=url3;
                 it.putExtra("position",i);
                 it.putExtra("id",itemBean.id);
                 act.startActivity(it);*/
-                MainActivity.allurl=urllist;
+              /*  MainActivity.allurl=urllist;
                 act.replaceFragment(new New_Video_home(),"sdss",itemBean.tredcover,"Movies", itemBean.tredname + " " + itemBean.treddesp, itemBean.id, 1);
+   */       Controls.pauseControl(act);
+                MainActivity.allurl = urllist;
+                Intent it = new Intent(act, SubtitlePlayer.class);
+                it.putExtra("url", urllist.get(i).m3u8);
+                it.putExtra("pos", i);
+                it.putExtra("id",  list.get(i).id);
+                act.startActivity(it);
             }
         });
        // Picasso.with(myViewHolder.itemView.getContext()).load(itemBean.albumcover).placeholder(R.drawable.ic_profile).fit().into(myViewHolder.img);

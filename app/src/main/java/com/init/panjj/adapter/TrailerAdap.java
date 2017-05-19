@@ -9,11 +9,12 @@ import android.widget.FrameLayout;
 
 import com.init.panjj.R;
 import com.init.panjj.activity.MainActivity;
-import com.init.panjj.otherclasses.CustomImageView;
+import com.init.panjj.activity.SubtitlePlayer;
 import com.init.panjj.fragments.MainFragment;
-import com.init.panjj.fragments.New_Video_home;
 import com.init.panjj.model.ItemBean;
 import com.init.panjj.model.UrlBean;
+import com.init.panjj.otherclasses.CustomImageView;
+import com.init.panjj.radioplayer.Controls;
 
 import java.util.ArrayList;
 
@@ -64,8 +65,16 @@ if (itemBean.tredcover.equals("null"))
                 it.putExtra("position",i);
                 it.putExtra("id",itemBean.id);
                 act.startActivity(it);*/
-                MainActivity.allurl=urllist;
+               /* MainActivity.allurl=urllist;
                 act.replaceFragment(new New_Video_home(),urllist.get(i).BT200,itemBean.tredcover,tag+"s", itemBean.tredname + " " + itemBean.treddesp, itemBean.id, myViewHolder.getAdapterPosition());
+       */
+                Controls.pauseControl(act);
+                MainActivity.allurl = urllist;
+                Intent it = new Intent(act, SubtitlePlayer.class);
+                it.putExtra("url", urllist.get(i).m3u8);
+                it.putExtra("pos", i);
+                it.putExtra("id",  list.get(i).id);
+                act.startActivity(it);
             }
         });
        /* ImageLoader.getInstance().loadImage("http://staticori.iiscandy.com/Music_Videos/Kuldeep/Punjabi/Pasand/Songs/V_220_panj.jpg", new  SimpleImageLoadingListener() {

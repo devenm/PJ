@@ -40,6 +40,7 @@ import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.init.panjj.R;
 import com.init.panjj.activity.MainActivity;
+import com.init.panjj.activity.SubtitlePlayer;
 import com.init.panjj.activity.UserLogin;
 import com.init.panjj.adapter.AdapterLive;
 import com.init.panjj.adapter.MainContentAdoptor1;
@@ -47,11 +48,12 @@ import com.init.panjj.adapter.MainContentAdoptor2;
 import com.init.panjj.adapter.MainContentAdoptor3;
 import com.init.panjj.adapter.Trailer_Adaptor;
 import com.init.panjj.adapter.TrendingAdaptor;
-import com.init.panjj.otherclasses.AutoScrollViewPager;
-import com.init.panjj.otherclasses.BackgroundProcess;
 import com.init.panjj.model.CutomBean;
 import com.init.panjj.model.ItemBean;
 import com.init.panjj.model.LiveTvBean;
+import com.init.panjj.otherclasses.AutoScrollViewPager;
+import com.init.panjj.otherclasses.BackgroundProcess;
+import com.init.panjj.radioplayer.Controls;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.viewpagerindicator.CirclePageIndicator;
 
@@ -989,9 +991,17 @@ Log.e("bannererror",e .toString());
             imageLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    MainActivity.allurl = bannrurl;
+                    Log.e("id",""+bannerlist.get(position).id);
+                   /* MainActivity.allurl = bannrurl;
                     act.replaceFragment(new New_Video_home(), bannrurl.get(position).BT200, list.get(position).newcover, "videos", list.get(position).albumname, list.get(position).id, position);
-                }
+                  */  Controls.pauseControl(getActivity());
+                    MainActivity.allurl = banner_url;
+                    Intent it = new Intent(act, SubtitlePlayer.class);
+                    it.putExtra("url", banner_url.get(position).m3u8);
+                    it.putExtra("pos", position);
+                    it.putExtra("id",  bannerlist.get(position).id);
+                    startActivity(it);
+               }
             });
             return imageLayout;
         }

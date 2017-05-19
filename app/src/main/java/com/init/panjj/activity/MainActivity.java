@@ -277,6 +277,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         newFragment.setArguments(bundle);
         newFragment.show(ft, "dialog");
     }
+
     public void dialogshow(DialogFragment newFragment, String url, String song, String vd, String tag, int i, String name) {
         FragmentTransaction ftt = getSupportFragmentManager().beginTransaction();
         Fragment prevv = getSupportFragmentManager().findFragmentByTag(tag);
@@ -311,15 +312,15 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         switch (position) {
             case 0:
                 //replaceFragment(new MainFragment(), "", "", "home", "", "", 1);
-                MainFragment mainFragments= (MainFragment) getSupportFragmentManager().findFragmentByTag("home");
-                if (mainFragments!=null)
+                MainFragment mainFragments = (MainFragment) getSupportFragmentManager().findFragmentByTag("home");
+                if (mainFragments != null)
                     mainFragments.openlive(position);
                 //removeFromBackStact();
                 title = "Home";
                 break;
             case 1:
-               MainFragment mainFragment= (MainFragment) getSupportFragmentManager().findFragmentByTag("home");
-                if (mainFragment!=null)
+                MainFragment mainFragment = (MainFragment) getSupportFragmentManager().findFragmentByTag("home");
+                if (mainFragment != null)
                     mainFragment.openlive(4);
                 // replaceFragment(new LiveTvFragment(), "", "", "radio", "", "", 1);
                 break;

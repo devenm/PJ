@@ -28,6 +28,7 @@ public class TrailerCommunicator {
                 JSONObject jsonObject2 = latest.getJSONObject(i);
                 JSONObject jsonObj = jsonObject2.getJSONObject("Urls");
                 ItemBean itemBean = new ItemBean();
+                itemBean.m3u8=jsonObj.getString("m3u8");
                 itemBean.BT200 = jsonObj.getString("BT200");
                 itemBean.BT385 = jsonObj.getString("BT385");
                 itemBean.BT500 = jsonObj.getString("BT500");
@@ -43,10 +44,11 @@ public class TrailerCommunicator {
                 item.id = jsonObject2.getString("id");
                 latestllist.add(item);
             }
-        } catch (JSONException e) {
+        }
+        catch (JSONException e) {
             Log.e("movieerror", BuildConfig.VERSION_NAME + e.toString());
             e.printStackTrace();
         }
-        this.communicator.data(latestllist, latesturl);
+        communicator.data(latestllist, latesturl);
     }
 }
