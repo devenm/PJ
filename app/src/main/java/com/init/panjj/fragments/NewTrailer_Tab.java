@@ -52,6 +52,7 @@ public class NewTrailer_Tab extends Fragment implements SwipeRefreshLayout.OnRef
     ArrayList<ItemBean> trailerlist;
     ArrayList<ItemBean> trailerurl;
     ArrayList<CutomBean> mainlist;
+
     public MoviesCommunicator getMoviesCommunicator() {
         if (this.moviesCommunicator == null) {
             this.moviesCommunicator = new MoviesCommunicator();
@@ -67,7 +68,7 @@ public class NewTrailer_Tab extends Fragment implements SwipeRefreshLayout.OnRef
             this.flagg = true;
             this.trailerlist = new ArrayList();
             this.trailerurl = new ArrayList();
-            mainlist=new ArrayList<>();
+            mainlist = new ArrayList<>();
         }
         if (this.rootView != null) {
             return this.rootView;
@@ -117,7 +118,7 @@ public class NewTrailer_Tab extends Fragment implements SwipeRefreshLayout.OnRef
         this.swipeRefreshLayout.setRefreshing(true);
         this.avLoadingIndicatorView.show();
         new ServerUrls().getClass();
-        new ServerRequest(this, "http://iiscandy.com/panj/SectionPlayList?id=1&"+"&stype=" + dtype, new HashMap(), 3, 0);
+        new ServerRequest(this, "http://iiscandy.com/panj/SectionVTPlayList?id=3&" + "&stype=" + dtype, new HashMap(), 3, 0);
 
     }
 
@@ -133,7 +134,7 @@ public class NewTrailer_Tab extends Fragment implements SwipeRefreshLayout.OnRef
 
     public void data(ArrayList<ItemBean> latesturllist, ArrayList<ItemBean> latesturl) {
         if (this.trailerAdap != null) {
-           // this.trailerAdap.notifyDataSetChanged();
+            // this.trailerAdap.notifyDataSetChanged();
         }
     }
 

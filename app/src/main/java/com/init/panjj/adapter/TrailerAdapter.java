@@ -4,7 +4,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.Adapter;
 import android.support.v7.widget.RecyclerView.ViewHolder;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -36,7 +35,7 @@ public class TrailerAdapter extends Adapter<TrailerAdapter.MyViewHolder> {
         }
 
         public void onClick(View v) {
-          mainActivity.dialogshow(new ViewAll_Tab(), "http://iiscandy.com//panj/PanjSeaAll?name=", this.val$cutomBean.getActualName(), BuildConfig.VERSION_NAME, "featured", 1, this.val$cutomBean.getActualName());
+            mainActivity.dialogshow(new ViewAll_Tab(), "http://iiscandy.com//panj/PanjSeaAll?name=", this.val$cutomBean.getActualName(), BuildConfig.VERSION_NAME, "featured", 1, this.val$cutomBean.getActualName());
         }
     }
 
@@ -67,7 +66,6 @@ public class TrailerAdapter extends Adapter<TrailerAdapter.MyViewHolder> {
         if (this.typelist.size() > 0) {
             CutomBean cutomBean = (CutomBean) this.typelist.get(position);
             holder.see_all.setOnClickListener(new C05151(cutomBean));
-            Log.e("callbind", BuildConfig.VERSION_NAME + ((CutomBean) this.typelist.get(3)).getArrayList());
             this.allInOnAdapter = new TrailerAllvideoAdaptor(this.mainActivity, cutomBean.getArrayList());
             holder.recyclerView.setAdapter(this.allInOnAdapter);
             holder.name.setText(BuildConfig.VERSION_NAME + cutomBean.getActualName());
